@@ -35,7 +35,7 @@ function numberOfOccurrencesInText(word, text){
   return wordCount;
 }
 
-function commonWords(text) {
+/*function commonWords(text) {
   if(text.trim().length === 0){
     return 0;
   }
@@ -44,17 +44,15 @@ function commonWords(text) {
 
   for(let i = 0; i < wordArray.length; i++){
     let wordCount = 0;
-    console.log(wordArray[i]);
-    htmlString = htmlString.concat("<li>" + wordArray[i] + ": " + wordCount + "</li>");
-    /*for(let j = 0; j < wordArray.length; j++){
-      if(wordArray[i].toLowerCase() === wordArray[j].toLowerCase()){
+    for(let j = 0; j < wordArray.length; j++){
+      if(wordArray[i].toLowerCase().includes(wordArray[j].toLowerCase())){
           wordCount ++;
           console.log(wordArray[j]);
       }
-    }*//*);*/
+    }htmlString = htmlString.concat("<li>" + wordArray[i] + ": " + wordCount + "</li>");
   }
 return htmlString + "</ul>";
-}
+}*/
 
   /*wordArray.forEach(function(element){
     if (element.toLowerCase() === (element.toLowerCase())){
@@ -66,6 +64,7 @@ return htmlString + "</ul>";
       wordCount = 0;
     }
   });*/
+
 //UI LOGIC
 
 function boldPassage(word,text){

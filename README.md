@@ -58,7 +58,7 @@ Description: commonWords()
 Test: should return 3 most common words in array
 Code:
 const theseWords = "hello HELLO Hello what what there there"
-commonWords(theseWords);
+commonWords(text);
 Expected Result:
 "<h3>Most common words:</h3>
 <ul>
@@ -67,3 +67,10 @@ Expected Result:
 <li>there: 2</li>
 </ul>"
 
+Description: badWords()
+
+Test: Should remove "bad" words from array
+Code:
+const text = "Hello, you are a goon"
+badWords(text);
+Expected Result: "Hello, you are a "
